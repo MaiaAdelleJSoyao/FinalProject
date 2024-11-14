@@ -134,14 +134,14 @@
             color: brown;
         }
 
-        .last {
+       footer {
             background-color: #003366; 
             color: white; 
             padding: 40px; 
             text-align: left; 
         }
 
-        .last button {
+        footer button {
             background-color: #5d4037; 
             display: block; 
             margin-top: 20px; 
@@ -149,11 +149,20 @@
             padding: 10px 20px;
         }
 
-        .last button:hover {
-            background-color: #7b4b3a; 
+       footer button:hover {
+            background-color: #808080;
         }
+        
+        footer button:focus {
+   		 outline: none;
+   		 border: 2px solid #305076; 
+		}
+        
+        footer button:active {
+   	 	transform: scale(0.98); 
+    	background-color: #5d4037; 
 
-        .last div img {
+        footer div img {
             width: 50px; 
             height: 50px; 
             object-fit: cover; 
@@ -210,13 +219,13 @@
         </div>
     </section>
 
-    <section class="last">
+    <footer>
         <div>
             <h2>Get Involved</h2>
             <button>INQUIRE</button>
             <img src="https://www.amaytics.com/assets/images/team/digital-marketing-company-in-adelaide.png" alt="Get Involved Image">
             <p>Join us in making a difference. Your support is crucial to our mission.</p>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
