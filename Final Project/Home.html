@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+          <!DOCTYPE html>
 <html>
 <head>
 
@@ -68,6 +69,7 @@
             background-color: #f0e68c; 
             padding: 20px; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+            
         }
 
         .banner h2 {
@@ -85,7 +87,11 @@
         .banner img {
             width: 35%;
             object-fit: cover; 
-            border-radius: 12px; 
+            border-radius: 12px;
+        }
+        
+        .banner:hover {
+        transition property: transform;
         }
 
         .banner button {
@@ -113,14 +119,21 @@
             width: 30%;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 5px 10px rgba(41, 38, 38, 0.1); 
         }
         
-        .middle div img {
+        .middle img {
             width: 300px;
             height: 300px;
             object-fit: cover;
             margin-bottom: 15px;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease out;
+        }
+        
+        .image1:hover {
+            transform: scale(30px, 30px);
         }
         
         .middle div h3 {
@@ -204,7 +217,7 @@
 
     <section class="middle">
         <div>
-            <img src="https://i.ytimg.com/vi/cxkv7fZyChw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBwtHb0TK2IdmWzxXgf6643kzR2Qw" alt="Image">
+            <img class="image1" src="https://i.ytimg.com/vi/cxkv7fZyChw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBwtHb0TK2IdmWzxXgf6643kzR2Qw" alt="Image">
             <h4>we aim to..raise awareness</h4>
             <p>Learn about the Philippine education.</p>
         </div>
