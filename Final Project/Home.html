@@ -1,8 +1,6 @@
-
-          <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-
     <title>The Wisdom Whisperer</title>
     <style>
         * {
@@ -11,27 +9,26 @@
             box-sizing: border-box;
             font-size: 15px;
         }
-        
+
         body {
             font-family: 'Trocchi';
             background-color: white;
-            font-size: 30px; 
+            font-size: 30px;
         }
 
         header {
-            background-color:#305076; 
+            background-color: #305076;
             padding: 5px;
-            text-align: center; 
-            height: 100px; 
+            text-align: center;
+            height: 100px;
             display: flex;
-            flex-direction: column; 
-            align-items: center; 
-            border: 1px; 
+            flex-direction: column;
+            align-items: center;
+            border: 1px;
         }
-        
 
         header h6 {
-            font-size: 30px; 
+            font-size: 30px;
             letter-spacing: 5px;
             text-transform: uppercase;
             margin: 10px 0;
@@ -43,44 +40,50 @@
             list-style-type: none;
             padding: 0;
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             margin-top: 10px;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px; 
+            margin: 0 15px;
         }
-        
+
+       
         nav ul li a {
-            color:white; 
+            color: white;
             text-decoration: none;
             font-weight: bold;
         }
-        nav ul li a:hover{
-        text-decoration:underline;
+
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #f0e68c; 
         }
+
         
-        
+        nav ul li a.active {
+            color:#f0e68c; 
+              }
         .banner {
-            display: flex; 
-            align-items: flex-start; 
+            display: flex;
+            align-items: flex-start;
             margin: 20px;
-            background-color: #f0e68c; 
-            padding: 20px; 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-            
+            background-color: #f0e68c;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .banner h2 {
-            font-size: 36px; 
-            margin-bottom: 10px; 
-            color: #4e342e; 
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #4e342e;
         }
 
         .banner p {
-            margin-right: 20px; 
-            color: #4e342e; 
+            margin-right: 20px;
+            color: #4e342e;
             line-height: 1;
         }
 
@@ -92,15 +95,15 @@
             border-radius: 8px;
         }
 
-    .banner button {
-            display: block; 
-            margin-top: 20px; 
-            background-color: #4e342e; 
+        .banner button {
+            display: block;
+            margin-top: 20px;
+            background-color: #4e342e;
             color: white;
             border: none;
-            padding: 10px 20px; 
+            padding: 10px 20px;
         }
-        
+
         .banner button:hover {
             background-color: #7b4b3a;
         }
@@ -109,52 +112,56 @@
             display: flex;
             justify-content: space-between;
             padding: 60px 10%;
-            background-color: white; 
+            background-color: white;
         }
 
         .middle div {
-            background-color: white; 
+            background-color: white;
             width: 30%;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 8px 20px rgba(41, 38, 38, 0.3); 
+            box-shadow: 0 8px 20px rgba(41, 38, 38, 0.3);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        
+
         .middle div:hover {
             transform: scale(1.05);
             box-shadow: 0 12px 30px rgba(41, 38, 38, 0.5);
         }
 
         .middle img {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             margin-bottom: 15px;
         }
-        
+
         .middle div h4 {
             font-size: 2em;
             margin-bottom: 15px;
-            color: #4e342e; 
+            color: #4e342e;
         }
-         
+
         .middle div p {
             font-size: 1.1em;
             color: brown;
         }
 
         footer {
-            background-color: #003366; 
-            color: white; 
-            padding: 40px; 
-            text-align: left; 
+            background-color: #003366;
+            color: white;
+            padding: 40px;
+            text-align: left;
+        }
+
+        footer a {
+            color: white;
         }
 
         footer button {
-            background-color: #5d4037; 
-            display: block; 
-            margin-top: 20px; 
+            background-color: #5d4037;
+            display: block;
+            margin-top: 20px;
             color: white;
             padding: 10px 20px;
         }
@@ -162,40 +169,42 @@
         footer button:hover {
             background-color: #808080;
         }
-        
+
         footer button:focus {
             outline: none;
-            border: 2px solid #305076; 
-        }
-        
-        footer button:active {
-            transform: scale(0.98); 
-            background-color: #5d4037; 
+            border: 2px solid #305076;
         }
 
-      footer div img {
+        footer button:active {
+            transform: scale(0.98);
+            background-color: #5d4037;
+        }
+
+        footer div img {
             width: `80px;
             height: 50px;
             object-fit: cover;
             margin-bottom: 15px;
         }
+		footer a:hover {
+            color:blue;
+        }
     </style>
 </head>
 <body>
-	    <div class="bar"></div> 
-    
+    <div class="bar"></div>
+
     <header>
         <h6>The Wisdom Whisperer</h6>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li> 
                 <li><a href="Aboutus.html">About us</a></li>
                 <li><a href="#">How to donate</a></li>
-                <li><a href="#">Stories</a></li>
+                <li><a href="Stories.html">Stories</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-	        </nav>
-	
+        </nav>
     </header>
 
     <section class="banner">
@@ -209,35 +218,39 @@
             <button>Learn more</button>
             <button>DONATE TODAY</button>
         </div>
-       
-       <img src="https://static.vecteezy.com/system/resources/thumbnails/041/298/138/small/ai-generated-spontaneous-fun-candid-selfie-of-the-little-child-and-their-friends-in-the-midst-of-an-impromptu-laughter-filled-moment-generative-ai-photo.jpg" alt="Image">
+
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/041/298/138/small/ai-generated-spontaneous-fun-candid-selfie-of-the-little-child-and-their-friends-in-the-midst-of-an-impromptu-laughter-filled-moment-generative-ai-photo.jpg" alt="Image">
     </section>
 
     <section class="middle">
         <div>
             <img class="image1" src="https://i.ytimg.com/vi/cxkv7fZyChw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBwtHb0TK2IdmWzxXgf6643kzR2Qw" alt="Image">
-            <h4>we aim to..raise awareness</h4>
+            <h4>We aim to... raise awareness</h4>
             <p>Learn about the Philippine education.</p>
         </div>
         <div>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQiMBOErkUI2HwuyKhxKVLH16WPT-c09K0baOe3SbQADpruXleBnSwmddwsd5HYb4CplU1zL5xiUdKslaU4l4ekry0pQPVoU2t-7OYZiW8e2ALrH_gA-PiaEbzB6dOaxIqhfginTYQ8LB8/s1600/terence-children2.jpg" alt="Image">
-            <h4>we aim to..take action</h4>
+            <h4>We aim to... take action</h4>
             <p>Join us in making a difference.</p>
         </div>
         <div>
             <img src="https://theirworld.org/wp-content/uploads/2021/11/Philippines-public-school.jpg" alt="Image">
-            <h4>we aim to.. show statistics</h4>
+            <h4>We aim to... show statistics</h4>
             <p>Learn the statistics about education poverty.</p>
         </div>
     </section>
 
     <footer>
         <div>
-            <h2>Get Involved</h2>
+            <a href="#">Get Involved</a>
             <button>INQUIRE</button>
             <img src="https://www.amaytics.com/assets/images/team/digital-marketing-company-in-adelaide.png" alt="Get Involved Image">
             <p>Join us in making a difference. Your support is crucial to our mission.</p>
         </div>
-    </footer>
+        </footer>
 </body>
 </html>
+
+
+
+
