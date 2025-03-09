@@ -148,6 +148,35 @@
             margin-bottom: 10px;
 		    
 		}
+	#quiz-button {
+    		background-color: #305076; 
+    		color: white;
+    		font-size: 18px;
+    		font-weight: bold;
+    		padding: 12px 24px;
+    		border: none;
+    		border-radius: 8px;
+    		cursor: pointer;
+    		display: block;
+    		margin: 20px auto;
+    		transition: background-color 0.3s, transform 0.2s;
+		}
+
+	#quiz-button:hover {
+    		background-color: #f0e68c;
+    		color: #305076;
+		}
+
+	#quiz-button:focus {
+    		outline: none;
+    		border: 2px solid #f0e68c;
+		}
+        
+        #quiz-button:active {
+			transform: scale(0.95);
+    		background-color: #5d4037;
+    		color: white;
+		}
 
         footer {
             background-color: #003366;
