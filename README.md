@@ -6,3 +6,5 @@ https://github.com/MaiaAdelleJSoyao/FinalProject
 I added a quiz that is located in the page About Us below the Who we are Section.
 - The quiz is about SDG 4 Quality Education
 - It works by asking questions related to the SDG and u can press next previous and it gives you your score at the end.
+
+I added a sign up page and a profile page
