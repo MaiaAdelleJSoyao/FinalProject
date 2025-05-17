@@ -71,14 +71,14 @@
               }
               
          #bar {
-   			background-color: #cde4eb;
+   		background-color: #cde4eb;
     		padding: 40px;
     		text-align: center;
     		font-size: 24px;
     		position: relative; 
 		}
 
-		#bar h2 {
+	#bar h2 {
     		font-size: 50px; 
     		position: absolute; 
     		left: 20px; 
