@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Wisdom Whisperer</title>
+  <link rel="stylesheet" href="signup.css" />
+  <script src="sign.js"></script>
+</head>
+<body>
+
+  <header>
+    <h6>The Wisdom Whisperer</h6>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="#" class="active">Sign up to Donate</a></li>
+        <li><a href="Stories.html">Stories</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+     <section id="bar"></section>
+
+    <main>
+    <form id="signup" onsubmit="return save();" action="prof.html">
+      <h1>The Wisdom Whisperer : Sign Up</h1>
+	<h2> Education for all, opportunity for all.</h2>
+
+      <label for="name1">First Name: <span class="required">*</span></label>
+      <input type="text" id="name1" required><br>
+
+      <label for="name2">Last Name: <span class="required">*</span></label>
+      <input type="text" id="name2" required><br>
+
+      <p>Select Sex:</p>
+      <label><input type="radio" name="sex" value="Male" required> Male</label><br>
+      <label><input type="radio" name="sex" value="Female"> Female</label><br>
+      <label><input type="radio" name="sex" value="Prefer not to say"> Prefer not to say</label><br>
+
+      <label for="email">Email Address: <span class="required">*</span></label>
+      <input type="text" id="email" required><br>
+
+      <label for="pword">Password: <span class="required">*</span></label>
+      <input type="password" id="pword" required><br>
+
+      <label for="con">Contact Number:</label>
+      <input type="text" id="con"><br>
+
+      <label for="reason">Why you’re supporting our campaign: <span class="required">*</span></label>
+      <textarea id="reason" rows="4" required></textarea><br>
+
+      <button type="submit">Sign up</button>
+    </form>
+  </main>
+
+   <footer>
+    <div>
+      <a href="#">Get Involved</a>
+      <button>INQUIRE</button>
+      <img src="https://www.amaytics.com/assets/images/team/digital-marketing-company-in-adelaide.png" alt="Get Involved Image">
+      <p>Join us in making a difference. Your support is crucial to our mission.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
